@@ -6,6 +6,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "Features"
- , glue="stepdefinition" /*, tags = "@paramExampleKeyword"*/)
+ , glue="stepdefinition" , tags = "@login" //,dryRun = true
+, plugin = {"pretty","html:target/cucumber/report.html"})
 public class TestRunner {
 }

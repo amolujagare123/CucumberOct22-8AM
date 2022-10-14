@@ -74,7 +74,7 @@ public class SampleSD {
 
     @Then("I we should get error message")
     public void iWeShouldGetErrorMessage() {
-        String expected = "https://stock.amolujagare.com/index.php?msg=Wrong%20Username%20or%20Password&type=error";
+        String expected = "https://stock.amolujagare.com/index.php?msg=Wrong%20Username%20or";
         String actual = driver.getCurrentUrl();
         Assert.assertEquals("incorrect or no error message",expected,actual);
     }
