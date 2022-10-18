@@ -67,7 +67,7 @@ public class SampleSD {
     public void I_enter_incorrect_username_and_incorrect_password()
     {
         driver.findElement(By.id("login-username")).sendKeys("xyz");
-        driver.findElement(By.id("login-password")).sendKeys("abc");
+        driver.findElement(By.xpath("login-password")).sendKeys("abc");
 
     }
 
